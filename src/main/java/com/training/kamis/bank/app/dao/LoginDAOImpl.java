@@ -44,6 +44,10 @@ public class LoginDAOImpl implements LoginDAO {
 			stat = connection.prepareStatement("select * from customerinfo where username = ? and password = ? ");
 			stat.setString(1, username);
 			stat.setString(2, password);
+			
+			stat = connection.prepareStatement("select * from logininfo where username = ? and password = ? ");
+			stat.setString(1, username);
+			stat.setString(2, password);
 
 			ResultSet res = stat.executeQuery();
 			userValid = res.next();

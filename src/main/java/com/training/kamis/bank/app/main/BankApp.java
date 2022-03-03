@@ -314,7 +314,12 @@ public class BankApp {
 							System.out.println(
 									"If you wish to accept an account/accounts press 'Y' for yes:\nIf you don't want to accept (deny) the account/accounts press 'N' for no :");
 							String button = scanner.next();
-							if (button.equals("n") ) {
+							if (button.equals("n") ) 
+								{System.out.println("Please enter the username of the account you wish to deny: ");
+								username = scanner.next();
+								if(customerDAO.doesUsernameExist(username)) {
+									employeeDAO.deleteAfterAproval(username);
+								}
 								System.out.println("The account was denied.");
 							}
 							else if (button.equals("y")) {

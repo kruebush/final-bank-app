@@ -86,7 +86,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 				
 
 			rows = statement.executeUpdate();
-			System.out.println("The account/accounts for " + username+ " were added to the system.");
+			System.out.println("The account " + username+ " were added to the system.");
 
 		} catch (SQLException e) {
 			e.printStackTrace();
