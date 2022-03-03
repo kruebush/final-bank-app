@@ -1,0 +1,1 @@
+This app was developed by Kami Ruebush. Through out this project I implemented several java applications. Some of which include: Inheritance, Abstraction, Encapsulation, Polymorphism, Exception Handling, Inheritance, SQL, Junit, JDBC. While usinng all the listed application this project allows a user to login in as either a customer or employee or register for an acoount. 
